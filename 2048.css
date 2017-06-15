@@ -1,0 +1,118 @@
+/**
+ *游戏UI样式
+ * Created by Zhangxuening on 17-6-5.
+ * my weibo: http://weibo.com/zxn980105
+ */
+
+body{
+	/*背景颜色 黑夜*/
+    background: #282828;
+}
+
+/*游戏结束时候的虚化*/
+.mask{
+	bottom: 0;
+    left: 0;
+	background-color: black;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	display: none;
+	position: absolute;
+	z-index: 100;
+
+}
+
+/*游戏成功*/
+.success{
+    position: relative;
+	z-index: 102;
+	display: none;
+	font: bold 20px '微软雅黑';
+	color:white;
+    text-align:center;
+    top: 40%;
+}
+
+/*游戏失败*/
+.fail{
+	position: relative;
+	z-index: 102;
+	display: none;
+	font: bold 20px '微软雅黑';
+	color:white;
+    text-align:center;
+    top: 40%;
+}
+
+
+
+/*标题部分*/
+header{
+    display:block;
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+}
+
+/*标题文字*/
+header h1{
+    font-family:Arial;
+    font-size:50px;
+    font-weight:bold;
+    color:#5c5c5c;
+}
+
+/*按钮：新的游戏*/
+header #newgamebutton{
+    display:block;
+    margin:20px auto;
+
+    width:100px;
+    padding:10px 10px;
+    background-color:#333333;
+
+    /*按钮上的字*/
+    font-family:Arial;
+    color:white;
+    text-decoration:none;
+   
+    /*边框是半径为10的圆角*/
+    border-radius:10px;
+}
+/*鼠标悬浮在该按钮上时*/
+header #newgamebutton:hover{
+    background-color:#666666;
+}
+
+/*score的样式*/
+header p{
+    font-family:Arial;
+    font-size:25px;
+    margin:20px auto;
+    color:#5c5c5c;
+}
+
+
+/*游戏的活动UI*/
+
+/*较大正方形块*/
+#grid-container{
+    margin:50px auto;
+    background-color:#404040;
+
+    position: relative;
+}
+
+/*较小正方形块*/
+.grid-cell{
+    background-color:#666666;
+	
+    position: absolute;
+}
+
+/*不同数字对应的表情包*/
+.number-cell{
+    overflow:hidden;
+    position: absolute;
+}
+
